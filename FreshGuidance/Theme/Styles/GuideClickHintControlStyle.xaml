@@ -1,0 +1,63 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:fg="clr-namespace:FreshGuidance"
+                    xmlns:local="clr-namespace:FreshGuidance.Theme.Styles">
+    <Style TargetType="fg:GuideClickHintControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="fg:GuideClickHintControl">
+                    <Canvas Name="PART_Canvas">
+                        <Ellipse Name="PART_Glow_Ellipse" IsHitTestVisible="False"
+                                 StrokeThickness="20" Fill="Transparent">
+                            <Ellipse.Triggers>
+                                <EventTrigger RoutedEvent="Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard TargetProperty="Stroke.(RadialGradientBrush.GradientStops)[1].Offset">
+                                            <DoubleAnimation
+                                                RepeatBehavior="Forever"
+                                                From="0.6" To="1"
+                                                Duration="0:0:1"
+                                                AutoReverse="True"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Ellipse.Triggers>
+                            <Ellipse.Stroke>
+                                <RadialGradientBrush>
+                                    <GradientStop Color="#0000FF" Offset="0.5"/>
+                                    <GradientStop Color="Transparent" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Ellipse.Stroke>
+                            <Ellipse.Effect>
+                                <BlurEffect Radius="10"/>
+                            </Ellipse.Effect>
+                        </Ellipse>
+                        <Border Name="PART_Main_Border" Padding="10" CornerRadius="5">
+                            <Grid MinWidth="200" MinHeight="30">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <ContentPresenter Grid.ColumnSpan="2"
+                                                  SnapsToDevicePixels="True"/>
+                                <Button Grid.Row="1"
+                                        Grid.Column="1"
+                                        MinWidth="50"
+                                        Margin="10 0 10 0"
+                                        Padding="5"
+                                        HorizontalAlignment="Right"
+                                        x:Name="PART_Skip_Button"
+                                        Style="{DynamicResource SecondButtonStyle}"
+                                        Content="{TemplateBinding SecondButtonContent}"/>
+                            </Grid>
+                        </Border>
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
