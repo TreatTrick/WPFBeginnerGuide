@@ -10,3 +10,4 @@
 # [Bb]uild/
 
 *.vsidx
+.vs/

@@ -212,14 +212,12 @@ namespace FreshGuidance
             radialGradientParams.EllipseHeight = ellipseHeight;
             if (ellipseWidth > ellipseHeight)
             {
-                //radialGradientParams.RadiusX = ((ellipseWidth - ellipseHeight) / (ellipseWidth - strokeThickness)) * 0.5 + 0.5;
                 radialGradientParams.RadiusX = 0.5;
                 radialGradientParams.RadiusY = 0.5;
                 radialGradientParams.Offset = 1 - strokeThickness / (ellipseHeight / 2);
             }
             else
             {
-                //radialGradientParams.RadiusY = ((ellipseHeight- ellipseWidth) / (ellipseHeight - strokeThickness)) * 0.5 + 0.5;
                 radialGradientParams.RadiusX = 0.5;
                 radialGradientParams.RadiusY = 0.5;
                 radialGradientParams.Offset = 1 - strokeThickness / (ellipseWidth / 2);
