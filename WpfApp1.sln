@@ -1,11 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{064C1189-3558-462F-BEC9-D30D53F27E9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{064C1189-3558-462F-BEC9-D30D53F27E9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreshGuidance", "FreshGuidance\FreshGuidance.csproj", "{8D6E0FE0-19D6-46DB-9142-E7378F198FF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreshGuidance", "FreshGuidance\FreshGuidance.csproj", "{8D6E0FE0-19D6-46DB-9142-E7378F198FF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
