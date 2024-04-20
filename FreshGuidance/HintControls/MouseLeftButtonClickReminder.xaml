@@ -6,43 +6,32 @@
              xmlns:local="clr-namespace:FreshGuidance"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.Resources>
-        <Style TargetType="ContentControl">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate>
-                        <Viewbox>
-                            <Grid>
-                                <Image Source="{StaticResource MouseLeftButtonDown}" Name="MouseDownImage" Opacity="1"/>
-                                <Image Source="{StaticResource MouseLeftButtonUp}" Name="MouseUpImage" Opacity="0"/>
-                            </Grid>
-                        </Viewbox>
-                        <ControlTemplate.Triggers>
-                            <EventTrigger RoutedEvent="Loaded">
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity"
-                                                                       Storyboard.TargetName="MouseDownImage"
-                                                                       RepeatBehavior="Forever"
-                                                                       Duration="0:0:1">
-                                            <DiscreteDoubleKeyFrame Value="0" KeyTime="0:0:0.5"></DiscreteDoubleKeyFrame>
-                                        </DoubleAnimationUsingKeyFrames>
-                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity"
-                                                                       Storyboard.TargetName="MouseUpImage"
-                                                                       RepeatBehavior="Forever"
-                                                                       Duration="0:0:1">
-                                            <DiscreteDoubleKeyFrame Value="1" KeyTime="0:0:0.5"></DiscreteDoubleKeyFrame>
-                                        </DoubleAnimationUsingKeyFrames>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </UserControl.Resources>
     <Grid>
-        <ContentControl></ContentControl>
+        <Viewbox>
+            <Grid>
+                <Image Source="{StaticResource MouseLeftButtonDown}" Name="MouseDownImage" Opacity="1"/>
+                <Image Source="{StaticResource MouseLeftButtonUp}" Name="MouseUpImage" Opacity="0"/>
+            </Grid>
+        </Viewbox>
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="SizeChanged">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity"
+                                                       Storyboard.TargetName="MouseDownImage"
+                                                       RepeatBehavior="Forever"
+                                                       Duration="0:0:1">
+                            <DiscreteDoubleKeyFrame Value="0" KeyTime="0:0:0.5"></DiscreteDoubleKeyFrame>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity"
+                                                       Storyboard.TargetName="MouseUpImage"
+                                                       RepeatBehavior="Forever"
+                                                       Duration="0:0:1">
+                            <DiscreteDoubleKeyFrame Value="1" KeyTime="0:0:0.5"></DiscreteDoubleKeyFrame>
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
     </Grid>
 </UserControl>

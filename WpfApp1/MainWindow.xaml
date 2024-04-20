@@ -8,35 +8,35 @@
         xmlns:fg="clr-namespace:FreshGuidance;assembly=FreshGuidance"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="400">
+        Title="MainWindow" Height="300" Width="500">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="0" Content="TEST" Background="Aqua" Width="100">
+        <Button Grid.Row="0" Content="TEST" Background="Orange" Width="100">
             <fg:GuideMaskHelper.HelpBindTargetControl>
                 <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="0" EventName="Click">
                     <fg:SetupGuideMaskContext.HintControl>
                         <fg:GuideTipHintControl Background="Bisque">
-                            <fg:MouseLeftButtonClickReminder Width="100" Height="100"></fg:MouseLeftButtonClickReminder>
+                            <TextBlock Text="Test text test text"/>
                         </fg:GuideTipHintControl>
                     </fg:SetupGuideMaskContext.HintControl>
                 </fg:SetupGuideMaskContext>
             </fg:GuideMaskHelper.HelpBindTargetControl>
         </Button>
 
-        <Button Grid.Row="0" Grid.Column="2" Content="TEST" Background="Aqua" Width="100">
+        <Button Grid.Row="0" Grid.Column="2" Content="TEST" Background="Orange" Width="100">
             <fg:GuideMaskHelper.HelpBindTargetControl>
                 <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="1" EventName="Click">
                     <fg:SetupGuideMaskContext.HintControl>
@@ -48,19 +48,19 @@
             </fg:GuideMaskHelper.HelpBindTargetControl>
         </Button>
 
-        <Button Grid.Row="0" Grid.Column="4" Content="TEST" Background="Aqua" Width="100">
+        <Button Grid.Row="0" Grid.Column="4" Content="TEST" Background="Orange" Width="100">
             <fg:GuideMaskHelper.HelpBindTargetControl>
                 <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="2" EventName="Click">
                     <fg:SetupGuideMaskContext.HintControl>
-                        <fg:GuideClickHintControl Background="Bisque">
-                            <fg:MouseLeftButtonClickReminder Width="100" Height="100"></fg:MouseLeftButtonClickReminder>
-                        </fg:GuideClickHintControl>
+                        <fg:GuideTipHintControl Background="Bisque">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
                     </fg:SetupGuideMaskContext.HintControl>
                 </fg:SetupGuideMaskContext>
             </fg:GuideMaskHelper.HelpBindTargetControl>
         </Button>
 
-        <Button Grid.Row="2" Grid.Column="0" Content="TEST" Background="Aqua" Width="100">
+        <Button Grid.Row="2" Grid.Column="0" Content="TEST" Background="Orange" Width="100">
             <fg:GuideMaskHelper.HelpBindTargetControl>
                 <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="3" EventName="Click">
                     <fg:SetupGuideMaskContext.HintControl>
@@ -72,19 +72,19 @@
             </fg:GuideMaskHelper.HelpBindTargetControl>
         </Button>
 
-        <Button Grid.Row="2" Grid.Column="4" Content="TEST" Background="Aqua" Width="100">
+        <Button Grid.Row="2" Grid.Column="4" Content="TEST" Background="Orange" Width="100">
             <fg:GuideMaskHelper.HelpBindTargetControl>
                 <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="4" EventName="Click">
                     <fg:SetupGuideMaskContext.HintControl>
-                        <fg:GuideClickHintControl Background="Bisque" Placement="LEFT">
-                            <fg:MouseLeftButtonClickReminder Width="100" Height="100"></fg:MouseLeftButtonClickReminder>
-                        </fg:GuideClickHintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="LEFT">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
                     </fg:SetupGuideMaskContext.HintControl>
                 </fg:SetupGuideMaskContext>
             </fg:GuideMaskHelper.HelpBindTargetControl>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="0" Content="TEST" Background="Aqua" Width="100">
+        <Button Grid.Row="4" Grid.Column="0" Content="TEST" Background="Orange" Width="100">
             <fg:GuideMaskHelper.HelpBindTargetControl>
                 <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="5" EventName="Click">
                     <fg:SetupGuideMaskContext.HintControl>
@@ -96,19 +96,19 @@
             </fg:GuideMaskHelper.HelpBindTargetControl>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="2" Content="TEST" Background="Aqua" Width="100">
+        <Button Grid.Row="4" Grid.Column="2" Content="TEST" Background="Orange" Width="100">
             <fg:GuideMaskHelper.HelpBindTargetControl>
                 <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="6" EventName="Click">
                     <fg:SetupGuideMaskContext.HintControl>
-                        <fg:GuideClickHintControl Background="Bisque" Placement="TOP">
-                            <fg:MouseLeftButtonClickReminder Width="100" Height="100"></fg:MouseLeftButtonClickReminder>
-                        </fg:GuideClickHintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="TOP">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
                     </fg:SetupGuideMaskContext.HintControl>
                 </fg:SetupGuideMaskContext>
             </fg:GuideMaskHelper.HelpBindTargetControl>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="4" Content="TEST" Background="Aqua" Width="100">
+        <Button Grid.Row="4" Grid.Column="4" Content="TEST" Background="Orange" Width="100">
             <fg:GuideMaskHelper.HelpBindTargetControl>
                 <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="7" EventName="Click">
                     <fg:SetupGuideMaskContext.HintControl>
