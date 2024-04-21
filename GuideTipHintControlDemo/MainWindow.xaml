@@ -1,0 +1,129 @@
+﻿<Window x:Class="GuideTipHintControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fg="clr-namespace:FreshGuidance;assembly=FreshGuidance"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Content="TEST 0" Background="Orange" Width="50" Height="50">
+            <fg:GuideMaskHelper.HelpBindTargetControl>
+                <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="0">
+                    <fg:SetupGuideMaskContext.HintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="BOTTOM">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
+                    </fg:SetupGuideMaskContext.HintControl>
+                </fg:SetupGuideMaskContext>
+            </fg:GuideMaskHelper.HelpBindTargetControl>
+        </Button>
+
+        <Button Grid.Row="0" Grid.Column="2" Content="TEST 1" Background="Orange" Width="50" Height="50">
+            <fg:GuideMaskHelper.HelpBindTargetControl>
+                <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="1">
+                    <fg:SetupGuideMaskContext.HintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="BOTTOM">
+                            <TextBlock>Test text test text</TextBlock>
+                        </fg:GuideTipHintControl>
+                    </fg:SetupGuideMaskContext.HintControl>
+                </fg:SetupGuideMaskContext>
+            </fg:GuideMaskHelper.HelpBindTargetControl>
+        </Button>
+
+        <Button Grid.Row="0" Grid.Column="4" Content="TEST 2" Background="Orange" Width="50" Height="50">
+            <fg:GuideMaskHelper.HelpBindTargetControl>
+                <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="2">
+                    <fg:SetupGuideMaskContext.HintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="BOTTOM">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
+                    </fg:SetupGuideMaskContext.HintControl>
+                </fg:SetupGuideMaskContext>
+            </fg:GuideMaskHelper.HelpBindTargetControl>
+        </Button>
+
+        <Button Grid.Row="2" Grid.Column="0" Content="TEST 3" Background="Orange" Width="50" Height="50">
+            <fg:GuideMaskHelper.HelpBindTargetControl>
+                <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="3">
+                    <fg:SetupGuideMaskContext.HintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="RIGHT">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
+                    </fg:SetupGuideMaskContext.HintControl>
+                </fg:SetupGuideMaskContext>
+            </fg:GuideMaskHelper.HelpBindTargetControl>
+        </Button>
+
+        <Button Grid.Row="2" Grid.Column="2" Click="Button_Click">Show guide tips</Button>
+
+        <Button Grid.Row="2" Grid.Column="4" Content="TEST 4" Background="Orange" Width="50" Height="50">
+            <fg:GuideMaskHelper.HelpBindTargetControl>
+                <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="4">
+                    <fg:SetupGuideMaskContext.HintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="LEFT">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
+                    </fg:SetupGuideMaskContext.HintControl>
+                </fg:SetupGuideMaskContext>
+            </fg:GuideMaskHelper.HelpBindTargetControl>
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="0" Content="TEST 5" Background="Orange" Width="50" Height="50">
+            <fg:GuideMaskHelper.HelpBindTargetControl>
+                <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="5">
+                    <fg:SetupGuideMaskContext.HintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="TOP">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
+                    </fg:SetupGuideMaskContext.HintControl>
+                </fg:SetupGuideMaskContext>
+            </fg:GuideMaskHelper.HelpBindTargetControl>
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="2" Content="TEST 6" Background="Orange" Width="50" Height="50">
+            <fg:GuideMaskHelper.HelpBindTargetControl>
+                <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="6">
+                    <fg:SetupGuideMaskContext.HintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="TOP">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
+                    </fg:SetupGuideMaskContext.HintControl>
+                </fg:SetupGuideMaskContext>
+            </fg:GuideMaskHelper.HelpBindTargetControl>
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="4" Content="TEST 7" Background="Orange" Width="50" Height="50">
+            <fg:GuideMaskHelper.HelpBindTargetControl>
+                <fg:SetupGuideMaskContext GuideMaskKey="FIRST" HintControlIndex="7">
+                    <fg:SetupGuideMaskContext.HintControl>
+                        <fg:GuideTipHintControl Background="Bisque" Placement="TOP">
+                            <TextBlock Text="Test text test text"/>
+                        </fg:GuideTipHintControl>
+                    </fg:SetupGuideMaskContext.HintControl>
+                </fg:SetupGuideMaskContext>
+            </fg:GuideMaskHelper.HelpBindTargetControl>
+        </Button>
+        <fg:GuideMaskWrapper Name="wrapper"
+                         Grid.Row="0"
+                         Grid.Column="0"
+                         Grid.RowSpan="5"
+                         Grid.ColumnSpan="5"
+                         Content="{fg:GetGuideMask FIRST, GuideMaskBackGroundBrush=#53000000}">
+        </fg:GuideMaskWrapper>
+    </Grid>
+</Window>

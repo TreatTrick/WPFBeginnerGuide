@@ -37,39 +37,9 @@ namespace FreshGuidance
                 new FrameworkPropertyMetadata(typeof(GuideMask)));
         }
 
-        static public DependencyProperty DisplayProperty
-            = DependencyProperty.RegisterAttached(
-                "Display",
-                typeof(bool),
-                typeof(GuideMask),
-                new PropertyMetadata(false, DisplayChangedCallback));
-
-        static public void SetDisplay(DependencyObject obj, bool display)
-        {
-            obj.SetValue(DisplayProperty, display);
-        }
-
-        static public bool GetDisplay(DependencyObject obj)
-        {
-            return (bool)obj.GetValue(DisplayProperty);
-        }
-
-        private static void DisplayChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-
-            if (GetDisplay(d))
-            {
-                ((d as GuideMaskWrapper).Content as GuideMask).Show();
-            }
-            else
-            {
-                ((d as GuideMaskWrapper).Content as GuideMask).Visibility = Visibility.Collapsed;
-            }
-        }
-
         public GuideMask()
         {
-
+            Visibility = Visibility.Hidden;
         }
 
         static public GuideMask GuideMaskFactory(string key)
@@ -82,13 +52,16 @@ namespace FreshGuidance
 
         static private Dictionary<string, GuideMask> GuideMasksCache = new Dictionary<string, GuideMask>();
 
-        private void Show()
+        public void Show()
         {
+            Visibility = Visibility.Visible;
+            _collectionIndex = 0;
+            _canvasHint.Children?.Clear();
             foreach (var control in GuideHintControls.Values)
             {
                 _canvasHint?.Children.Add(control);
             }
-            Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() =>
+            Dispatcher.BeginInvoke(DispatcherPriority.Render, new Action(() =>
             {
                 ShowNextGuide();
             }));
@@ -102,13 +75,14 @@ namespace FreshGuidance
                 Visibility = Visibility.Collapsed;
                 return;
             }
-
             int selectKey = GuideHintControls.Keys.ElementAt(_collectionIndex);
             HintControlBase hintControl = GuideHintControls[selectKey];
             if (hintControl == null) 
                 return;
-            hintControl.OnPartNextButtonPressed += _ => { ShowNextGuide(); };
-            hintControl.OnPartSkipButtonPressed += _ => { Visibility = Visibility.Collapsed; };
+            hintControl.OnPartNextButtonPressed -= OnNextButtonPressed;
+            hintControl.OnPartSkipButtonPressed -= OnSkipButtonPressed;
+            hintControl.OnPartNextButtonPressed += OnNextButtonPressed;
+            hintControl.OnPartSkipButtonPressed += OnSkipButtonPressed;
             _transparentBorder.Visibility = hintControl.CanInvokeTargetControl ? Visibility.Collapsed : Visibility.Visible;
 
             FrameworkElement targetControl = hintControl.TargetControl;
@@ -132,6 +106,16 @@ namespace FreshGuidance
             CombineHint(rg, targetControl, point);
             hintControl.SetGuideHintControlPosition(this, point);
             _collectionIndex++;
+        }
+
+        private void OnSkipButtonPressed(HintControlBase @base)
+        {
+            Visibility = Visibility.Collapsed;
+        }
+
+        private void OnNextButtonPressed(HintControlBase hintControl)
+        {
+            ShowNextGuide();
         }
 
         private void Container_SizeChanged(object sender, SizeChangedEventArgs e)
