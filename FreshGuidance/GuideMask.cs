@@ -108,7 +108,7 @@ namespace FreshGuidance
             _collectionIndex++;
         }
 
-        private void OnSkipButtonPressed(HintControlBase @base)
+        private void OnSkipButtonPressed(HintControlBase hintControl)
         {
             Visibility = Visibility.Collapsed;
         }
@@ -212,6 +212,7 @@ namespace FreshGuidance
                 if (del == null)
                     throw new Exception($"The Event of {routedEvent.HandlerType.Name} in target control {type.Name} does not " +
                         $"match the delegate InvokeEventArgsCommand(object sender, EventArgs e)");
+                targetControl.RemoveHandler(routedEvent, del);
                 targetControl.AddHandler(routedEvent, del, true);
             }
         }

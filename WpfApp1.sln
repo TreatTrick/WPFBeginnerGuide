@@ -6,7 +6,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp1", "WpfApp1\WpfApp1.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreshGuidance", "FreshGuidance\FreshGuidance.csproj", "{8D6E0FE0-19D6-46DB-9142-E7378F198FF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuideTipHintControlDemo", "GuideTipHintControlDemo\GuideTipHintControlDemo.csproj", "{77CD9D10-B2FC-41F6-AD85-92C78C5CC99B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuideTipHintControlDemo", "GuideTipHintControlDemo\GuideTipHintControlDemo.csproj", "{77CD9D10-B2FC-41F6-AD85-92C78C5CC99B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuideClickHintControlDemo", "GuideClickHintControlDemo\GuideClickHintControlDemo.csproj", "{91C746F2-FF92-4043-96A9-8070C07BB60B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{77CD9D10-B2FC-41F6-AD85-92C78C5CC99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77CD9D10-B2FC-41F6-AD85-92C78C5CC99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77CD9D10-B2FC-41F6-AD85-92C78C5CC99B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C746F2-FF92-4043-96A9-8070C07BB60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C746F2-FF92-4043-96A9-8070C07BB60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C746F2-FF92-4043-96A9-8070C07BB60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C746F2-FF92-4043-96A9-8070C07BB60B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
