@@ -34,7 +34,7 @@ namespace FreshGuidance
             GuideMask guideMask = GuideMask.GuideMaskFactory(GuideMaskKey);
             if (guideMask.GuideHintControls.ContainsKey(HintControlIndex))
             {
-                throw new Exception($"HintControlIndex {HintControlIndex} already exists.");
+                Console.WriteLine($"Warning: HintControlIndex {HintControlIndex} already exists.");
             }
             guideMask.GuideHintControls[HintControlIndex] = HintControl;
             HintControl.TargetControl = targetObject as FrameworkElement;

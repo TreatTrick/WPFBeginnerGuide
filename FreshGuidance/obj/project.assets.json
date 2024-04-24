@@ -125,11 +125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\FreshGuidance.csproj",
+      "projectUniqueName": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\FreshGuidance.csproj",
       "projectName": "FreshGuidance",
-      "projectPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\FreshGuidance.csproj",
+      "projectPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\FreshGuidance.csproj",
       "packagesPath": "C:\\Users\\11541\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\obj\\",
+      "outputPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

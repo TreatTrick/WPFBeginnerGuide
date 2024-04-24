@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\11541\\Desktop\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {}
+    "C:\\Users\\11541\\Desktop\\BeginnerGuide\\GuideMixUsageDemo\\GuideMixUsageDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\FreshGuidance.csproj": {
+    "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\FreshGuidance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\FreshGuidance.csproj",
+        "projectUniqueName": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\FreshGuidance.csproj",
         "projectName": "FreshGuidance",
-        "projectPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\FreshGuidance.csproj",
+        "projectPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\FreshGuidance.csproj",
         "packagesPath": "C:\\Users\\11541\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\obj\\",
+        "outputPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\11541\\Desktop\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {
+    "C:\\Users\\11541\\Desktop\\BeginnerGuide\\GuideMixUsageDemo\\GuideMixUsageDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\11541\\Desktop\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
-        "projectName": "WpfApp1",
-        "projectPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+        "projectUniqueName": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\GuideMixUsageDemo\\GuideMixUsageDemo.csproj",
+        "projectName": "GuideMixUsageDemo",
+        "projectPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\GuideMixUsageDemo\\GuideMixUsageDemo.csproj",
         "packagesPath": "C:\\Users\\11541\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\WpfApp1\\obj\\",
+        "outputPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\GuideMixUsageDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -109,8 +109,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\FreshGuidance.csproj": {
-                "projectPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\FreshGuidance.csproj"
+              "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\FreshGuidance.csproj": {
+                "projectPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\FreshGuidance.csproj"
               }
             }
           }
@@ -129,16 +129,6 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "Microsoft.CSharp": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            },
-            "System.Data.DataSetExtensions": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

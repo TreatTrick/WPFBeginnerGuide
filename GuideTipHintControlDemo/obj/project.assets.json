@@ -146,11 +146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\11541\\Desktop\\WpfApp1\\GuideTipHintControlDemo\\GuideTipHintControlDemo.csproj",
+      "projectUniqueName": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\GuideTipHintControlDemo\\GuideTipHintControlDemo.csproj",
       "projectName": "GuideTipHintControlDemo",
-      "projectPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\GuideTipHintControlDemo\\GuideTipHintControlDemo.csproj",
+      "projectPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\GuideTipHintControlDemo\\GuideTipHintControlDemo.csproj",
       "packagesPath": "C:\\Users\\11541\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\GuideTipHintControlDemo\\obj\\",
+      "outputPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\GuideTipHintControlDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -171,8 +171,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\FreshGuidance.csproj": {
-              "projectPath": "C:\\Users\\11541\\Desktop\\WpfApp1\\FreshGuidance\\FreshGuidance.csproj"
+            "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\FreshGuidance.csproj": {
+              "projectPath": "C:\\Users\\11541\\Desktop\\BeginnerGuide\\FreshGuidance\\FreshGuidance.csproj"
             }
           }
         }

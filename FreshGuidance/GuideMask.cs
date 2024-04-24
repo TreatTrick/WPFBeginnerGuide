@@ -100,6 +100,7 @@ namespace FreshGuidance
             container.SizeChanged -= Container_SizeChanged;
             container.SizeChanged += Container_SizeChanged;
 
+
             Point point = targetControl.TransformToAncestor(container).Transform(new Point(0, 0)); 
 
             RectangleGeometry rg = new RectangleGeometry() { Rect = new Rect(0, 0, container.ActualWidth, container.ActualHeight) };
